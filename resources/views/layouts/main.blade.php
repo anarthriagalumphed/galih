@@ -11,7 +11,7 @@
 
 <body>
     {{-- versi 1 --}}
-    @include('partials.navbar');
+    @include('partials.navbar')
 
     {{-- versi 2 --}}
 
