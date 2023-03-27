@@ -58,7 +58,7 @@ Route::get(
 //halaman single post//
 
 Route::get(
-    'blog/{slug}',
+    'blog/{post:slug}',
     // lebih simple
     [
         PostController::class, 'show'

@@ -18,11 +18,16 @@ class PostController extends Controller
 
 
 
-    public function show($slug)
+    public function show(Post $post)
     {
         return view('post', [
             "title" => "Single Post",
-            "post" => Post::find($slug)
+            "post" => $post
+
+            // kode ditas ini($post digunakan untuķ
+            // menyederhanakan kode dibawah)
+
+            // Post::find($id)
         ]);
     }
 }
